@@ -8,7 +8,6 @@ prawcore==1.5.0
 pydantic==1.7.3
 PySocks==1.7.1
 requests==2.25.1
-schedule==0.6.0
 six==1.15.0
 update-checker==0.18.0
 urllib3==1.26.2

@@ -5,7 +5,6 @@ from time import sleep
 import requests
 import praw
 import json
-import schedule
 import random
 import os
 import io
@@ -99,7 +98,6 @@ def post():
             print(e.args[0] + " key missing")
 
 
-schedule.every().hour().do(post)
 while True:
-    schedule.run_pending()
-    sleep(5)
+    post()
+    sleep(3600)
